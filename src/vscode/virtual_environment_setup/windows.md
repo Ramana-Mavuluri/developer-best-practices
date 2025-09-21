@@ -1,10 +1,10 @@
 # Python virtual environment set up in PC(Windows)
-    This guide will help you set up with following items
+This guide will help you set up with following items
 * Setup python virtual environment
-* Automatically switching to python virtual environment when you switch form project to project
-* Automatically installing required packages when you switch to project
-* Automatically loading environment variables when you switch to project
-* Adding .gitignore file to ignore virtual environment folder
+* Automatically switch to python virtual environment when you switch from project to project
+* Automatically install required packages when you switch to project
+* Automatically load environment variables when you switch to project
+* Add .gitignore file to ignore virtual environment folder
 
 ## Prerequisites
 * Python installed in your PC. You can download it from [here](https://www.python)
@@ -32,7 +32,7 @@
 
     or If you do not have time and energy to read the guide, here is a brief summary of the steps you need to follow:
     
-    In summary, You can run the following command in powershell to set the execution policy to `RemoteSigned` for the current user:
+    Run the following command in powershell to set the execution policy to `RemoteSigned` for the current user:
 
     ```powershell
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
@@ -49,7 +49,7 @@
     ```
 
 
-### Automatically switching to python virtual environment when you switch form project to project
+### Automatically switch to python virtual environment when you switch from project to project
 Best way to do this is via direnv plugin, you can find the installation guide [here](https://direnv.net/docs/installation.html)
 
 First two steps are one time setup steps, you do not need to repeat them for every project
@@ -83,7 +83,7 @@ First two steps are one time setup steps, you do not need to repeat them for eve
 5. Now, whenever you open the project folder in Visual Studio Code, it will automatically switch to the python virtual environment
 
 
-### Automatically installing required packages when you switch to project
+### Automatically install required packages when you switch to project
 The main objective behind creating virtual environments is to manage dependencies for different projects separately.
 There are two ways to manage dependencies in python virtual environments
 1. Manually install the required packages using pip command whenever you switch to the project
@@ -111,7 +111,7 @@ There are two ways to manage dependencies in python virtual environments
 4. Now, whenever you switch to the project, it will automatically install the required packages from the requirements.txt file
     Note: It will install only those packages which are not already installed in the virtual environment 
 
-### Automatically loading environment variables when you switch to project
+### Automatically load environment variables when you switch to project
 Simple approach is to set them in `.envrc` file when there are less number of environment variables; if there are many environment variables, you can use a `.env` file or `.env.local` file to manage them
 #### Adding environment variables in `.envrc` file
 1. You can set environment variables in the `.envrc` file to automatically load them whenever you switch to the project
